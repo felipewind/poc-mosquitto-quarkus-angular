@@ -1,0 +1,21 @@
+.header {
+    padding: 10px 16px;
+    background: green;
+    color: #f1f1f1;
+}
+
+.connect {
+    /* padding: 10px 16px; */
+    background: whitesmoke;
+    color: #f1f1f1;
+}
+
+.footer {
+    position: fixed;
+    padding: 10px 16px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gainsboro;
+    color: white;
+}

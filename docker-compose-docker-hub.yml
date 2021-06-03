@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+
+  mosquitto:
+    container_name: mqtt-mosquitto
+    image: felipewind/poc-mqtt-mosquitto:2.0.10
+    restart: always
+    networks:
+      - poc-mqtt-net
+    ports:
+      - 1883:1883
+      - 9001:9001
+
+  quarkus:
+    container_name: mqtt-quarkus
+    image: felipewind/poc-mqtt-quarkus:1.0
+    ports:
+      - 8080:8080
+    networks:
+      - poc-mqtt-net
+    depends_on:
+      - mosquitto
+    environment:
+      - mp.messaging.outgoing.topic-send-chat.host=mosquitto
+      - mp.messaging.incoming.topic-receive-chat.host=mosquitto
+
+  angular:
+    container_name: mqtt-angular
+    image: felipewind/poc-mqtt-angular:1.0
+    ports:
+      - 80:80
+    networks:
+      - poc-mqtt-net
+    depends_on:      
+      - mosquitto
+
+
+networks:
+  poc-mqtt-net:
+    driver: bridge
