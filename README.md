@@ -19,6 +19,8 @@ A POC to integrate Quarkus and Angular using Mosquitto.
 
 # Chat
 
+Just start the project and then acces the chat!
+
 [Quarkus Chat](http://localhost:8080/chat.html)
 
 [Angular Chat](http://localhost/)
