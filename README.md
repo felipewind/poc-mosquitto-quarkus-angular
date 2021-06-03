@@ -142,7 +142,7 @@ It's possible to acces the [swagger](http://localhost:8080/q/swagger-ui/) and se
 
 # Angular
 
-Quarkus communicate with Mosquitto using the Websockets protocol.
+Angular communicates with Mosquitto using the Websockets protocol.
 
 You can acces its [chat](http://localhost) and send and read the messages.
 
