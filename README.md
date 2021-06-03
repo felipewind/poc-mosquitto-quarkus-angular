@@ -126,14 +126,19 @@ Every message received from the chat is published on the `chat` topic.
 
 Every message received from the `chat` topic is broadcasted to the Websocket connection.
 
+![image](./documentation/images/angular-chat.png)
+
 ## MQTT tester
 
 There's one [MQTT tester](http://localhost:8080/mqtt.html) where you can see the last message that was published to the `chat` topic.
+
+![image](./documentation/images/quarkus-mqtt-tester.png)
 
 ## Swagger
 
 It's possible to acces the [swagger](http://localhost:8080/q/swagger-ui/) and send one message directly to the `chat` topic.
 
+![image](./documentation/images/quarkus-swagger.png)
 
 # Angular
 
@@ -141,6 +146,7 @@ Quarkus communicate with Mosquitto using the Websockets protocol.
 
 You can acces its [chat](http://localhost) and send and read the messages.
 
+![image](./documentation/images/angular-chat.png)
 
 # Credits
 
