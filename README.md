@@ -126,7 +126,7 @@ Every message received from the chat is published on the `chat` topic.
 
 Every message received from the `chat` topic is broadcasted to the Websocket connection.
 
-![image](./documentation/images/angular-chat.png)
+![image](./documentation/images/quarkus-chat.png)
 
 ## MQTT tester
 
